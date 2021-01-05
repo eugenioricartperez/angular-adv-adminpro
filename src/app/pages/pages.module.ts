@@ -8,6 +8,9 @@ import { AppRoutingModule } from '../app-routing.module';
 import { HeaderComponent } from '../shared/header/header.component';
 import { SidebarComponent } from '../shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from '../shared/breadcrumbs/breadcrumbs.component';
+import { FormsModule } from '@angular/forms'
+import { ComponentsModule } from '../components/components.module';
+
 
 @NgModule({
   declarations: [
@@ -27,8 +30,10 @@ import { BreadcrumbsComponent } from '../shared/breadcrumbs/breadcrumbs.componen
     PagesComponent
   ],
   imports: [
-    CommonModule,
-    AppRoutingModule
+    FormsModule,
+       CommonModule,
+    AppRoutingModule,
+    ComponentsModule
   ]
 })
 export class PagesModule { }
