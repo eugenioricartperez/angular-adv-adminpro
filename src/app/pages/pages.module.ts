@@ -10,6 +10,7 @@ import { SidebarComponent } from '../shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from '../shared/breadcrumbs/breadcrumbs.component';
 import { FormsModule } from '@angular/forms'
 import { ComponentsModule } from '../components/components.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -20,14 +21,16 @@ import { ComponentsModule } from '../components/components.module';
     PagesComponent,
     HeaderComponent,
     SidebarComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    AccountSettingsComponent
    
   ],
   exports:[
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent
   ],
   imports: [
     FormsModule,
